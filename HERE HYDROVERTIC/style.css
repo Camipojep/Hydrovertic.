@@ -1,0 +1,695 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: OrgonRegular;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #b0d5be;
+}
+
+header {
+  height: 100%;
+  background-color: #006F4F;
+  padding-left: 20px;
+
+}
+
+@font-face { font-family: OrgonRegular; src: url('font/Orgon-Regular.otf'); }
+@font-face { font-family: OrgonBold; font-weight: bold; src: url('font/Orgon-Bold.otf');}
+@font-face { font-family: OrgonExtraBold; font-weight: bold; src: url('font/Orgon-ExtraBold.otf'); }
+
+h1 {
+  color: #ffffff;
+  font-family: OrgonExtraBold;
+  font-size: 0px;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: OrgonRegular;
+  font-size: 20px;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: OrgonRegular;
+  font-size: 20px;
+}
+
+/* Links */
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C284D1;
+  text-decoration: none;
+}
+
+a.active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* BILLEDER */
+
+.logo {
+  display: inline;
+  width: 20%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+#graf {
+  width: 100%;
+}
+
+.profilicon {
+  width: 50px;
+  float: right;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.graficon {
+  width: 80px;
+  float: right;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+
+.leftarrow {
+  float:left;
+  width: 12%;
+}
+
+.rightarrow {
+  float: right;
+  width: 12%;
+}
+
+#profilpic {
+  justify-content: flex-start;
+    width: 150px;
+}
+
+.whiteleaf {
+  width: 20px;
+}
+
+/* BOKSE */
+
+#main-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#leftbox > * {
+  flex-basis: 100%;
+}
+
+#leftbox {
+  display: block;
+
+  vertical-align: middle;
+
+  width: 95%;
+  justify-items: center;
+  align-items: center;
+  border-radius: 0px;
+  text-align: center;
+  margin: 0;
+}
+
+#rightbox > * {
+  flex-basis: 100%;
+}
+
+#rightbox {
+display: block;
+
+vertical-align: middle;
+
+  width: 95%;
+
+  justify-items: center;
+  align-items: center;
+  border-radius: 0px;
+
+  text-align: center;
+  margin: 0;
+}
+
+#valuebox {
+  width: 100%;
+  max-height: 50px;
+  background-color: #5baa86;
+  text-align: center;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grafbox {
+  width: 100%;
+  background-color: #d8ead9;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 7px;
+}
+
+#topbox {
+  width: 100%;
+  background-color: #5baa86;
+  text-align: center;
+  margin-top: 0px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+#buttonbox {
+  width: 100%;
+  background-color: #d8ead9;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+
+#profilebox {
+display: block;
+
+vertical-align: middle;
+
+  width: 95%;
+
+  justify-items: center;
+  align-items: center;
+  border-radius: 0px;
+
+  text-align: center;
+  margin: 0;
+}
+
+#titlebox {
+  width: 100%;
+  background-color: #5baa86;
+  text-align: center;
+  margin-top: 20px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+#contentbox {
+  width: 100%;
+  background-color: #d8ead9;
+  text-align: center;
+  padding: 20px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+#inputbox > * {
+  flex-basis: 100%;
+}
+
+#inputbox {
+  display: inline-block;
+  font-family: OrgonBold;
+  text-align: left;
+  color: #4A9773;
+  padding: 10px;
+  border: 3px solid #4A9773;
+   border-radius: 7px;
+  background-color: inherit;
+  outline: none;
+  margin: 5px;
+  width: 47%;
+}
+
+#inputboxlarge {
+  display: inline-block;
+  font-family: OrgonBold;
+  text-align: left;
+  color: #4A9773;
+  padding: 10px;
+  border: 3px solid #4A9773;
+   border-radius: 7px;
+  background-color: inherit;
+  outline: none;
+  margin: 5px;
+  width: 96%;
+}
+
+#profilebox > * {
+  flex-basis: 100%;
+}
+
+#profilebox {
+  display: block;
+  padding: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.profbox > * {
+  flex-basis: 100%;
+}
+
+.profbox {
+  display: block;
+  padding: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.profilpic {
+  display: inline-block;
+  padding: 10px;
+  background-color: inherit;
+  outline: none;
+  margin: 5px;
+  width: 30%;
+}
+
+.profilname {
+  display: inline-block;
+  font-family: OrgonBold;
+  text-align: center;
+  padding: 10px;
+  background-color: inherit;
+  outline: none;
+  margin: 5px;
+  width: 64%;
+}
+
+
+/* Knapper */
+#buttonGraf {
+  background-color: #FAC2F2;
+  background-image: linear-gradient(#FAC2F2, #7E627A);
+  color: #ffffff;
+  font-family: OrgonRegular;
+  border: none;
+  border-radius: 7px;
+  padding: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#buttonTidInt {
+  background-color: #FAC2F2;
+  background-image: linear-gradient(#FAC2F2, #7E627A);
+  color: #ffffff;
+  font-family: OrgonRegular;
+  border: none;
+  border-radius: 7px;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10x;
+  margin-right: 10px;
+}
+
+#buttonProfile {
+  width: 99%;
+  background-color: #FAC2F2;
+  background-image: linear-gradient(#FAC2F2, #7E627A);
+  color: #ffffff;
+  font-family: OrgonBold;
+  border: none;
+  border-radius: 7px;
+  padding: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media screen and (min-width: 600px) {
+  .leftarrow {
+    width: 10%;
+  }
+
+  .rightarrow {
+    width: 10%;
+  }
+}
+
+@media screen and (min-width: 840px) {
+ html {
+    height: auto;
+  }
+
+  body {
+    background-size: auto;
+
+  }
+
+  h1 {
+    color: #ffffff;
+    font-family: OrgonExtraBold;
+    font-size: 40px;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-family: OrgonRegular;
+    font-size: 30px;
+  }
+
+    h3 {
+  color: #ffffff;
+  font-family: OrgonRegular;
+  font-size: 20px;
+}
+
+  .logo {
+    width: 10%
+  }
+
+    #graf {
+        width: 80%;
+    }
+
+     .leftarrow {
+    width: 12%;
+  }
+
+  .rightarrow {
+    width: 12%;
+  }
+
+    #profilpic {
+        width: 200px;
+    }
+
+
+  /* BOKSE */
+  #main-holder > * {
+    flex-basis: 100%;
+  }
+
+  #main-holder {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+
+  }
+
+  #leftbox {
+    order: 2;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    border-radius: 0px;
+    margin-left: 30px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  #rightbox {
+    order: 1;
+    max-width: 30%;
+    justify-items: center;
+    align-items: center;
+    border-radius: 0px;
+   
+    margin-left: 10px;
+    margin-right: 30px;
+    text-align: center;
+  }
+
+  #valuebox {
+    background-color: #5baa86;
+    text-align: center;
+  }
+
+  #grafbox {
+    background-color: #d8ead9;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  #topbox {
+    background-color: #5baa86;
+    text-align: center;
+  }
+
+  #buttonbox {
+    background-color: #d8ead9;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* Knapper */
+  #buttonGraf {
+    background-color: #FAC2F2;
+    background-image: linear-gradient(#FAC2F2, #7E627A);
+    color: #ffffff;
+    font-family: OrgonRegular;
+    font-size: 10px;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  #buttonTidInt {
+    background-color: #FAC2F2;
+    background-image: linear-gradient(#FAC2F2, #7E627A);
+    color: #ffffff;
+    font-family: OrgonRegular;
+    font-size: 10px;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 3x;
+    margin-right: 3px;
+  }
+
+  #buttonProfile {
+    width: 99%;
+    background-color: #FAC2F2;
+    background-image: linear-gradient(#FAC2F2, #7E627A);
+    color: #ffffff;
+    font-family: OrgonBold;
+    font-size: 10px;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  #profilebox {
+    margin: auto;
+    max-width: 800px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .profilicon {
+    width: 60px;
+  }
+
+  .leftarrow {
+    width: 8%;
+  }
+
+  .rightarrow {
+    width: 8%;
+  }
+
+  /* Knapper */
+  #buttonGraf {
+    background-color: #FAC2F2;
+    background-image: linear-gradient(#FAC2F2, #7E627A);
+    color: #ffffff;
+    font-family: OrgonRegular;
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #buttonTidInt {
+    background-color: #FAC2F2;
+    background-image: linear-gradient(#FAC2F2, #7E627A);
+    color: #ffffff;
+    font-family: OrgonRegular;
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10x;
+    margin-right: 10px;
+  }
+
+  #buttonProfile {
+    width: 99%;
+    background-color: #FAC2F2;
+    background-image: linear-gradient(#FAC2F2, #7E627A);
+    color: #ffffff;
+    font-family: OrgonBold;
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+/*DROPDOWN*/
+
+.dropbtn-graf {
+  background-color: #006F4F;
+  color: white;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  width: 70px;
+  padding-bottom: 25px;
+}
+
+.dropbtn-profil {
+  background-color: #006F4F;
+  color: white;
+  padding-top: 8px;
+   border: none;
+cursor: pointer;
+  padding-right: 20px;
+}
+
+.dropdown {
+  color: #006F4F;
+  float: right;
+  position: relative;
+  display:block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d8ead9;
+  min-width: 190px;
+  overflow: auto;
+  right: 0;
+  z-index:1 ;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+
+
+
+.dropdown-content a {
+  background-color: transparent;
+  border: none;
+  color: #4A9773;
+  width: 190px;
+padding-right: 60px;
+text-align: end;
+top: 60px;
+
+
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+
+  cursor: pointer;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #b0d5be;
+  color: #4A9773;
+ }
+
+
+.show {display:block;}
+
+.profilewhite {
+  width: 100px;
+  padding-top: 12px;
+  padding-left: 0px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  width: 70px;
+}
+
+
+.profilegreen {
+  width: 90px;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  float: left;
+}
+
+
+.grafgreen {
+  width: 60px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  float: left;
+
+}
+
+.logudgreen {
+  width: 60px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  float: left;
+  display: inline;
+}
+
+
+
